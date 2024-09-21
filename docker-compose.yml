@@ -9,7 +9,7 @@ services:
       PGDATABASE: followchecker
       PGUSER: postgres
       PGPASSWORD: postgres
-      PGHOST: app-example-followchecker-db-1
+      PGHOST: followchecker-db-1
     depends_on:
       - db
 
