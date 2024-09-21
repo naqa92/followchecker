@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Followed Streamers :</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Streamer</th>
+                <th>Followed At</th>
+            </tr>
+        </thead>
+        <tbody id="followed-table">
+            {% for streamer in streamers %}
+                <tr>
+                    <td>{{ streamer.broadcaster_name }}</td>
+                    <td>{{ streamer.followed_at }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
